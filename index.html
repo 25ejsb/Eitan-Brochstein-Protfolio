@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/f0b4d212f8.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eitan Brochstein</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__backgrounds">
+            <div class="header__backgrounds header__backgrounds--1">&nbsp;</div>
+            <div class="header__backgrounds header__backgrounds--2">&nbsp;</div>
+            <div class="header__backgrounds header__backgrounds--3">&nbsp;</div>
+            <div class="header__backgrounds header__backgrounds--4">&nbsp;</div>
+        </div>
+        <nav class="header__nav">
+            <a href="#" class="header__nav--link"><img src="images/logo.png" class="header__nav--logo" alt="Logo"></a>
+            <ul>
+                <li id="navchild"><a href="#">Home</a></li>
+                <li id="navchild"><a href="#contact">Contact</a></li>
+                <li id="navchild"><a href="#about">About</a></li>
+                <li id="navchild"><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+        <script>
+            setInterval(() => {
+                if (window.scrollY > 100) {
+                    if (!document.querySelector(".header__nav").classList.contains("sticky-nav")) {
+                        document.querySelector(".header__nav").classList.add("sticky-nav")
+                    }
+                } else {
+                    if (document.querySelector(".header__nav").classList.contains("sticky-nav")) {
+                        document.querySelector(".header__nav").classList.remove("sticky-nav")
+                    }
+                }
+            }, 1)
+        </script>
+        <div class="header__main">
+            <h1 class="header__title">Eitan Brochstein</h1>
+            <h2 class="header__desc">13 year old upcoming programmer. <br> Master in Web Design and Game Development.</h2>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+    <section class="about-section" id="about">
+        <h1 class="about-section__header">About Me</h1>
+        <h1 class="about-section__articletitle">"That 13 year old who programs"</h1>
+        <div class="about-section__aboutme">
+            <div class="about-section__aboutme--1">
+                <p class="about-section__aboutme--para">I am self taught, 13 year old programmer, that specializes in web design and game development. I program in HTML, CSS, JavaScript, Python, Lua, C#, C++, etc. I started programming in 2020 with Lua in Roblox Studio. I developed my interest for programming by taking online courses on <a class="about-section__link" href="https://www.udemy.com">Udemy</a> and learning with online <a class="about-section__link" href="https://zoom.us">Zoom</a> Classes. I have learned basically all my web design skills from these courses and also learned languages like C# with Unity, and Python.</p>
+                <p class="about-section__aboutme--para">I started learning web development by making websites with my friends about a fictional company, which grew my love to web design in general. Later after that, I get a request from my Uncle to build a website for him and it was my first time building a truly professional website. The website is called <a class="about-section__link" href="https://www.shulmanrealtor.com">Shulman Realtor</a>. It is an example of what your website might look like if you hire me.</p>
+            </div>
+            <div class="about-section__aboutme--2">
+                <div class="about-section__about-me-image about-section__about-me-image--1">&nbsp;</div>
+                <div class="about-section__about-me-image about-section__about-me-image--2">&nbsp;</div>
+                <div class="about-section__about-me-image about-section__about-me-image--3">&nbsp;</div>
+            </div>
+        </div>
+        <h1 class="about-section__myprojectstitle">My Projects</h1>
+        <div class="about-section__myprojects">
+            <a href="/designs/noobieairlines/" class="about-section__myprojects about-section__myprojects--1">
+                <div class="about-section__myprojects--headerimg about-section__myprojects--headerimg__1">&nbsp;</div>
+                <h2 class="about-section__myprojects--headertitle about-section__myprojects--headertitle__1">Noobie Airlines</h2>
+                <p class="about-section__myprojects--para about-section__myprojects--para__1">Noobie Airlines is one of the worst and most destructive airlines to have ever touch the foot of this planet. This is my professional site about this amazing airline.</p>
+                <p class="about-section__myprojects--paraclone about-section__myprojects--paraclone__1">Noobie Airlines is one of the worst and most destructive airlines to have ever touch the foot of this planet. This is my professional site about this amazing airline.</p>
+            </a>
+            <a href="https://www.wavesofchangecg.com" class="about-section__myprojects about-section__myprojects--2">
+                <div class="about-section__myprojects--headerimg about-section__myprojects--headerimg__2">&nbsp;</div>
+                <h2 class="about-section__myprojects--headertitle about-section__myprojects--headertitle__2">Waves of Change</h2>
+                <p class="about-section__myprojects--para about-section__myprojects--para__1">Choosing a therapist can be a frightening and overwhelming task. For therapy to be most effective, it is important to find someone you can connect with, feel comfortable to share, process and cope with life’s most challenging struggles.</p>
+                <p class="about-section__myprojects--paraclone about-section__myprojects--paraclone__1">Choosing a therapist can be a frightening and overwhelming task. For therapy to be most effective, it is important to find someone you can connect with, feel comfortable to share, process and cope with life’s most challenging struggles.</p>
+            </a>
+            <a href="https://www.shulmanrealtor.com" class="about-section__myprojects about-section__myprojects--3">
+                <div class="about-section__myprojects--headerimg about-section__myprojects--headerimg__3">&nbsp;</div>
+                <h2 class="about-section__myprojects--headertitle about-section__myprojects--headertitle__3">Shulman Realtor</h2>
+                <p class="about-section__myprojects--para about-section__myprojects--para__1">Shulman Realtor is a professional website I made for one of the best realtors in Malden, MA, Adam Shulman, who also happens to be my uncle.</p>
+                <p class="about-section__myprojects--paraclone about-section__myprojects--paraclone__1">Shulman Realtor is a professional website I made for one of the best realtors in Malden, MA, Adam Shulman, who also happens to be my uncle.</p>
+            </a>
+        </div>
+    </section>
+    <section class="blog-section" id="blog">
+        <h1 class="blog-section__header">Blog Page</h1>
+        <div class="blog-section__blogs">
+            <div class="blog-section__blog blog-section__blog--1">
+                <div class="blog-section__blog--headerimgbg">
+                    <div class="blog-section__blog--headerimg blog-section__blog--headerimg--1">&nbsp;</div>
+                </div>
+                <h2 class="blog-section__blog--title">Basics Of Python</h2>
+                <p class="blog-section__blog--para">Python is one of the most useful, simple, and practical programming languages there is. Learn the basics of Python in a very short and brief description. </p>
+                <a href="#" class="blog-section__blog--learnmore">
+                    Learn More
+                </a>
+            </div>
+            <div class="blog-section__blog blog-section__blog--2">
+                <div class="blog-section__blog--headerimgbg">
+                    <div class="blog-section__blog--headerimg blog-section__blog--headerimg--2">&nbsp;</div>
+                </div>
+                <h2 class="blog-section__blog--title">Basics Of Html</h2>
+                <p class="blog-section__blog--para">HTML is a markup language which serves the purpose of making the structure of a website today. Learn basic HTML and make your own website!</p>
+                <a href="#" class="blog-section__blog--learnmore">
+                    Learn More
+                </a>
+            </div>
+            <div class="blog-section__blog blog-section__blog--3">
+                <div class="blog-section__blog--headerimgbg">
+                    <div class="blog-section__blog--headerimg blog-section__blog--headerimg--3">&nbsp;</div>
+                </div>
+                <h2 class="blog-section__blog--title">Basics Of Css</h2>
+                <p class="blog-section__blog--para">CSS is a sheet style language for making websites look beautiful. It takes elements from HTML and styles them. Learn basic CSS a make a beautiful website!</p>
+                <a href="#" class="blog-section__blog--learnmore">
+                    Learn More
+                </a>
+            </div>
+            <div class="blog-section__blog blog-section__blog--4">
+                <div class="blog-section__blog--headerimgbg">
+                    <div class="blog-section__blog--headerimg blog-section__blog--headerimg--4">&nbsp;</div>
+                </div>
+                <h2 class="blog-section__blog--title">Pong Pygame</h2>
+                <p class="blog-section__blog--para">Learn how to make Pong with a Python Library called Pygame! Pygame is a simple library where you can draw different rects and shapes on a canvas.</p>
+                <a href="#" class="blog-section__blog--learnmore">
+                    Learn More
+                </a>
+            </div>
+            <div class="blog-section__blog blog-section__blog--5">
+                <div class="blog-section__blog--headerimgbg">
+                    <div class="blog-section__blog--headerimg blog-section__blog--headerimg--5">&nbsp;</div>
+                </div>
+                <h2 class="blog-section__blog--title">Selenium Python</h2>
+                <p class="blog-section__blog--para">Selenium is a Python Library where you can scrape data from websites, and interact with web pages. Learn how to make a Twitter Bot with Selenium Python!</p>
+                <a href="#" class="blog-section__blog--learnmore">
+                    Learn More
+                </a>
+            </div>
+            <div class="blog-section__blog blog-section__blog--6">
+                <div class="blog-section__blog--headerimgbg">
+                    <div class="blog-section__blog--headerimg blog-section__blog--headerimg--6">&nbsp;</div>
+                </div>
+                <h2 class="blog-section__blog--title">Roblox PvP Game</h2>
+                <p class="blog-section__blog--para">Roblox is an app where you can create and play games. Roblox uses a programming language called Lua. Learn how to make a Sword Fighting game in Roblox!</p>
+                <a href="#" class="blog-section__blog--learnmore">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h1 class="contact-section__title">Contact Me</h1>
+        <div class="contact-section__main">
+            <input type="text" id="name" class="contact-section__main--name" name="name" placeholder="Name" required>
+            <input type="text" id="email" class="contact-section__main--email" name="email" placeholder="Email" required>
+            <textarea id="message" class="contact-section__main--message" name="message" placeholder="What you like me to know?"></textarea>
+            <div class="contact-section__main--extra">
+                <a href="#contact" class="contact-section__main--send" id="send">
+                    <h1 class="contact-section__main--send__text">Send</h1>
+                    <div class="contact-section__main--send__bg1">&nbsp;</div>
+                    <div class="contact-section__main--send__bg2">&nbsp;</div>
+                </a>
+                <a href="https://api.whatsapp.com/send/?phone=17812289821&text&type=phone_number&app_absent=0" class="contact-section__main--whatsapp">
+                    <i class="fab fa-whatsapp contact-section__main--whatsapp__logo"></i>
+                    <h3 class="contact-section__main--whatsapp__title">WhatsApp</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="javascript/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("bMgOoqXRn5I5wrtRQ"); //please encrypted user id for malicious attacks
+      })();
+    //set the parameter as per you template parameter[https://dashboard.emailjs.com/templates]
+    function sendEmail() {
+        var templateParams = {
+            to_name: "eitantravels25@gmail.com",
+            from_name: document.getElementById("email").value,
+            message: document.getElementById("message").value
+          };
+        
+          emailjs.send('service_rk0yz7p', 'template_iyg379m', templateParams)
+            .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+              console.log('FAILED...', error);
+            });
+    }
+    document.getElementById("send").addEventListener("click", () => {
+        sendEmail()
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+    })
+    </script>
+</body>
+</html>

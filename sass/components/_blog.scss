@@ -1,0 +1,122 @@
+.blog-section {
+    position: relative;
+    overflow: hidden;
+    height: 150rem;
+    background-color: #fafafa;
+    // background-image: linear-gradient(to right bottom, rgba($color-white, 0.7), rgba($color-white, 0.5)), url(images/wave.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    &__header {
+        width: 100%;
+        height: 10%;
+        font-size: 7rem;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .5s;
+        &:hover {
+            transform: skewX(11deg) skewY(2deg) scale(1);
+            text-shadow: .5rem 2rem 2rem rgba(black, .2);
+        }
+    }
+    &__blogs {
+        width: 80%;
+        height: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__blog {
+       width: 27.5%;
+       height: 45%;
+       background-color: white;
+       position: relative;
+    //    background-image: linear-gradient(to right bottom, rgba(rgb(40, 40, 40), 0.5), rgba(rgb(30, 30, 30), 0.7));
+       text-decoration: none;
+       overflow: hidden;
+       border-radius: 1rem;
+       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+       &--title {
+        width: 100%;
+        text-align: center;
+        font-size: 2.75rem;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+       }
+       &--headerimgbg {
+        width: 100%;
+        height: 40%;
+        transform: translate(0, -1%);
+        overflow: hidden;
+        transition: all 0.5s;
+       }
+       &--headerimg {
+        background-position: center;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s;
+        &--1 {
+            background-image: url(images/pythoncode.jpg);
+        }
+        &--2 {
+            background-image: url(images/html.jpeg);
+        }
+        &--3 {
+            background-image: url(images/css.jpeg);
+        }
+        &--4 {
+            background-image: url(images/pong.png);
+        }
+        &--5 {
+            background-image: url(images/selenium.png);
+        }
+        &--6 {
+            background-image: url(images/swordfighting.jpg);
+        }
+       }
+       &:hover &--headerimg {
+        transform: scale(1.3);
+        filter: blur(1px)
+       }
+       &--para {
+        width: 100%;
+        color: rgb(40, 40, 40);
+        font-weight: 500;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 3rem;
+       }
+       &--learnmore {
+        background-size: 250%;
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        text-decoration: none;
+        padding: 2rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        overflow: hidden;
+        border-radius: 4rem;
+        text-transform: uppercase;
+        position: absolute;
+        background-position: 0%;
+        left: 22.5%;
+        top: 82.5%;
+        transition: all .5s;
+        &:hover {
+            transform: translateY(2px);
+            background-position: 100%;
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+        }
+       }
+    }
+}

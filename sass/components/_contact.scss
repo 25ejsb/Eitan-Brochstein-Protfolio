@@ -1,0 +1,175 @@
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    height: 75rem;
+    background-color: white;
+    background-image: linear-gradient(to right bottom, rgba($color-black, 0.5), rgba($color-black, 0.8)), url(images/wave.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    &__title {
+        background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 7rem;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        letter-spacing: 4px;
+        transition: all 0.5s;
+        &:hover {
+            transform: skewX(11deg) skewY(2deg) scale(1);
+            text-shadow: .5rem 2rem 2rem rgba(black, .2);
+        }
+    }
+    &__main {
+        width: 65%;
+        height: 65%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 2;
+        border-radius: 2rem;
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &--name {
+            width: 80%;
+            height: 10%;
+            border: none;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-family: "Montserrat", sans-serif;
+            border-bottom: 3px solid rgb(200, 200, 200);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+            border-radius: 2rem;
+            padding: 1% 1%;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: black;
+                font-family: inherit;
+            }
+        }
+        &--email {
+            width: 80%;
+            height: 10%;
+            border: none;
+            font-family: "Montserrat", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid rgb(200, 200, 200);
+            border-radius: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+            padding: 1% 1%;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: black;
+                font-family: inherit;
+            }
+        }
+        &--message {
+            width: 80%;
+            height: 40%;
+            font-size: 2rem;
+            font-family: "Montserrat", sans-serif;
+            resize: none;
+            border-radius: 2rem;
+            padding: 1% 1%;
+            border-bottom: 3px solid rgb(200, 200, 200);
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+            border: none;
+            &:focus {
+                outline: none;
+            }
+            &::placeholder {
+                color: black;
+                text-transform: capitalize;
+            }
+        }
+        &--extra {
+            width: 80%;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        &--send {
+            width: 20%;
+            height: 80%;
+            position: relative;
+            text-decoration: none;
+            overflow: hidden;
+            border-radius: 4rem;
+            transition: all .5s;
+            &:hover {
+                transform: translate(10%);
+                box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+            }
+            &__bg1 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to right bottom, rgb(14, 235, 55), #20d441, #33b04a);
+            }
+            &__bg2 {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                transition: all .5s;
+                background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+            }
+            &:hover &__bg2 {
+                opacity: 0;
+                background-position: 100%;
+            }
+            &:hover &__bg1 {
+                background-position: 100%;
+            }
+            &__text {
+                z-index: 3;
+                width: 100%;
+                height: 100%;
+                color: white;
+                text-transform: uppercase;
+                position: relative;
+                transform: translateY(-30%);
+                font-size: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 0;
+                left: 0;
+            }
+        }
+        &--whatsapp {
+            width: 30%;
+            height: 80%;
+            border-radius: 0.5rem;
+            background-color: transparent;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &__title {
+                color: white;
+                font-size: 2.5rem;
+            }
+            &__logo {
+                background-image: linear-gradient(to right, $color-primary-dark, $color-primary, $color-primary-dark);
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 5rem;
+                padding: 1rem;
+            }
+        }
+    }
+}
